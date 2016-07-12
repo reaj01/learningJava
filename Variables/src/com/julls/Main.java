@@ -1,5 +1,9 @@
 package com.julls;
 
+
+import com.julls.Arrays.AnArray;
+import com.julls.DataTypes.DataTypes;
+
 public class Main {
 
     static int gears = 4; // static field the same number of gears will apply to all instances
@@ -12,13 +16,16 @@ public class Main {
 
         //don't write STATIC and NON-STATIC field in the method. It's ONLY in the beginning of the class (watch above)
 
+        AnArray.testArrays();
+
+
+
     }
 
     public static void methodAndParameter(int first, double second){ // these are parameters in the brackets
-        System.out.println(first);
-        System.out.println(second);
 
     }
+
 
 
 }
