@@ -3,6 +3,9 @@ package com.julls;
 
 import com.julls.Arrays.AnArray;
 import com.julls.DataTypes.DataTypes;
+import com.julls.operators.InstanceOfDemo;
+import com.julls.operators.OperatorsDemo;
+
 public class Main {
 
     static int gears = 4; // static field the same number of gears will apply to all instances
@@ -16,6 +19,8 @@ public class Main {
         //don't write STATIC and NON-STATIC field in the method. It's ONLY in the beginning of the class (watch above)
 
         new AnArray().testArrays();
+        new OperatorsDemo().demo();
+        new InstanceOfDemo().demo();
 
     }
 
