@@ -15,4 +15,43 @@ public class OperatorsDemo {
 
         System.out.println(result);
     }
+
+    public void demoCompound(){
+        int a = 3;
+        int b = 5;
+
+        // by precedence:
+        // postfix:
+        a++;
+        System.out.println(a);
+        a--;
+        System.out.println(a);
+        // prefix:
+        ++a;
+        System.out.println(a);
+        // multiplicative:
+        a = a*8;
+        System.out.println(a);
+        // additive:
+        a = a-6;
+        System.out.println(a);
+        // relational:
+        if (a > b)
+        System.out.println("a > b"); //t
+        if (a < b)
+        System.out.println("a < b"); // f
+        // equality:
+        if (a == b)
+            System.out.println("a = b"); // f
+        if (a != b)
+            System.out.println("a != b"); // t
+        // assignment:
+        a += 4;
+        System.out.println(a);
+        a *= 6;
+        System.out.println(a);
+        a %= 2;
+        System.out.println(a);
+
+    }
 }

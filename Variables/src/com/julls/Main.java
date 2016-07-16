@@ -18,9 +18,10 @@ public class Main {
 
         //don't write STATIC and NON-STATIC field in the method. It's ONLY in the beginning of the class (watch above)
 
-        new AnArray().testArrays();
-        new OperatorsDemo().demo();
-        new InstanceOfDemo().demo();
+//        new AnArray().testArrays();
+//        new OperatorsDemo().demo();
+//        new InstanceOfDemo().demo();
+        new OperatorsDemo().demoCompound();
 
     }
 
