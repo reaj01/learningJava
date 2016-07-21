@@ -1,34 +1,34 @@
 package com.julls;
 
 
-import com.julls.Arrays.AnArray;
-import com.julls.DataTypes.DataTypes;
-import com.julls.operators.InstanceOfDemo;
-import com.julls.operators.OperatorsDemo;
 
 public class Main {
 
-    static int gears = 4; // static field the same number of gears will apply to all instances
-    int speed = 10; // non-static field, unique to each instance of a class
-
     public static void main(String[] args) {
-        methodAndParameter(5, 3);
+        int a = 7;
+        int b = 6;
+        int c = 5;
+        int m = minimum(a, b, c);
+        System.out.println(minimum(-15, 5, -23));
+        System.out.println(minimum(7, 0, 3));
+        System.out.println(minimum(-9, 96, -100));
+        System.out.println(minimum(10, 9, 8));
+        System.out.println(minimum(8, -5, 9));
 
-        int currentSpeed = 6; // local variable, which is between the opening and closing braces of a method.
-
-        //don't write STATIC and NON-STATIC field in the method. It's ONLY in the beginning of the class (watch above)
-
-//        new AnArray().testArrays();
-//        new OperatorsDemo().demo();
-//        new InstanceOfDemo().demo();
-        new OperatorsDemo().demoCompound();
 
     }
 
-    public static void methodAndParameter(int first, double second){ // these are parameters in the brackets
+    private static int minimum(int a, int b) {
+        if(a < b){
+            return a;
+        } else{
+            return b;
+        }
+    }
+    private static int minimum(int a, int b, int c) {
+        int m = minimum(a, b);
+        return minimum(m, c);
+
 
     }
-
-
-
 }
