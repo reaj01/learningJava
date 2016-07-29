@@ -4,20 +4,20 @@ package com.julls;
  * Created by julia on 28.07.16.
  *
  */
-public class PsychoTest {
-    int sumResult;
+class PsychoTest {
+    private int sumResult;
 
-    public PsychoTest(Question[] questions, TestResults results) {
+    PsychoTest(Question[] questions, TestResults results) {
         this.questions = questions;
         this.results = results;
 
     }
 
-    Question [] questions;
-    TestResults results;
+    private Question [] questions;
+    private TestResults results;
 
 
-    public void run() {
+    void run() {
         askQuestions();
         calcAnswers();
         printResult();
@@ -25,7 +25,8 @@ public class PsychoTest {
 
     private void printResult() {
         String res = results.calcResult(sumResult);
-        System.out.println("Your result: " + sumResult);
+        System.out.println("Your result: " + res);
+
 
     }
 

@@ -4,27 +4,36 @@ import java.util.Scanner;
 
 /**
  * Created by julia on 28.07.16.
+ *
  */
-public class Question {
-    String question;
-    String [] answers;
+class Question {
+    private String question;
+    private String [] answers;
     int result;
 
-    public Question(String question, String[] answers) {
+    Question(String question, String[] answers) {
         this.question = question;
         this.answers = answers;
     }
 
-    public void ask() {
+    void ask() {
         printQuestion();
         showAnswers();
         readUserAnswer();
     }
 
     private void readUserAnswer() {
-        System.out.println("Your answer: ");
         Scanner sc = new Scanner(System.in);
+
+        do{
+
+
+        System.out.println("Your answer: ");
+
         result = sc.nextInt();
+
+        }while(result < 1 || result > 3);
+
 
     }
 
