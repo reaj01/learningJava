@@ -6,21 +6,15 @@ import java.util.Scanner;
  * Created by julia on 03.08.16.
  *
  */
-class Circle implements Figures {
+class Circle extends FigureImpl  {
 
     private double R;
     private double S;
 
-    void ask(){
-        haveUserAnswer();
-        calculateSquare();
-        showAnswer();
-    }
 
     @Override
     public void haveUserAnswer() {
 
-        System.out.println("I am circle.");
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, type your R: ");
         R = sc.nextDouble();
@@ -38,4 +32,5 @@ class Circle implements Figures {
         System.out.println("Your square is " + S);
 
     }
+
 }

@@ -6,21 +6,16 @@ import java.util.Scanner;
  * Created by julia on 03.08.16.
  *
  */
-class Triangle implements Figures {
+class Triangle extends FigureImpl {
     private double a;
     private double h;
     private double S;
 
-
-void ask() {
-    haveUserAnswer();
-    calculateSquare();
-    showAnswer();
-}
+//DRY
+    //Don't Repeat Yourself
     @Override
     public void haveUserAnswer() {
 
-        System.out.println("I am triangle.");
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, type your a: ");
@@ -40,6 +35,13 @@ void ask() {
     @Override
     public void showAnswer() {
         System.out.println("Your square is: " + S);
+
+    }
+
+    @Override
+    public String getMyName() {
+
+        return "Triangle";
 
     }
 }

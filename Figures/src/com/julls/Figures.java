@@ -12,4 +12,6 @@ interface Figures {
 
     void showAnswer();
 
+    String getMyName();
+
 }
